@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM
+        "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1">
+    <parameter name="browser" value="firefox"/> <!-- chrome / firefox / ... -->
+    <parameter name="makeScreenshot" value="always" /> <!-- always / onFailure -->
+    <parameter name="deleteScreenshots" value="false" /> <!-- true / false -->
+
+    <test name="Test1">
+        <classes>
+            <class name="selenium.framework.Tests.LoginTest"/>
+            <class name="selenium.framework.Tests.AddEnvironmentTest"/>
+            <class name="selenium.framework.Tests.AddVersionTest"/>
+        </classes>
+    </test>
+</suite>
